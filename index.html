@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summer 2022 WDD PBE Due Dates</title>
+    <script src="displayModules.js" defer></script>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!--JQuery-->
+    <script src="jquery.js"></script>
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header area for schedule selection -->
+    <div class="px-4 my-5 text-center">
+      <h1 class="display-4 fw-bold" id="main-heading">SU/22 PBE Due Dates</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+          Select the recommended completion schedule that you plan to follow, or
+          are following this semester.
+        </p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <select class="form-select form-select-lg" id="schedule-select">
+            <option value="15">15 Week</option>
+            <option value="71">7.5 Week (first half)</option>
+            <option value="72">7.5 Week (second half)</option>
+            <option value="10">MEME (late start)</option>
+          </select>
+        </div>
+        <p class="lead mb-4"><a href="#faq-link">Jump to FAQ</a></p>
+      </div>
+    </div>
+    <!-- end header area -->
+
+    <hr />
+
+    <!-- Begin schedule display area-->
+    <div class="px-4 my-5 text-center">
+      <div class="col-lg-6 mx-auto">
+        <h1 class="display-5 fw-bold">15 Week Schedule</h1>
+        <div id="card-holder">
+          <!-- This is where the Javascript injects the schedule (Bootstrap cards) -->
+        </div>
+      </div>
+    </div>
+    <!-- End schedule display area-->
+
+    <hr />
+
+    <!-- Begin FAQ Section -->
+    <div class="px-4 my-5 text-center">
+      <div class="col-lg-6 mx-auto">
+        <h1 id="faq-link" class="display-5 fw-bold">FAQ</h1>
+        <div class="accordion" id="accordionExample">
+          <!-- Question 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                <strong>Q:&nbsp;&nbsp;</strong>What if I don't complete all
+                modules by the end of the semester?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>A:&nbsp;&nbsp;</strong> PBE rules state that you must
+                complete each and every module with an 80 or higher in order to
+                pass the class, regardless of your course average. Therefore, if
+                the grade on your last module is less than an 80, it will result
+                in an F for the class.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 2-->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <strong>Q:&nbsp;&nbsp;</strong>Can I quickly complete multiple
+                modules at the very end of the semester?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>Answer: </strong> Remember the grade turnaround time can
+                take 2 days, plus longer for weekends, so you'll need to allow
+                for that time between modules. Therefore, you need to submit
+                your work before the end of the semester.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <strong>Q:&nbsp;&nbsp;</strong>What is the final deadline to
+                submit work?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>A:&nbsp;&nbsp;</strong> Assignments are due by 5:00 on
+                the last Wednesday of the semester in order to allow two
+                business days to grade. Fully automated computer graded
+                assessments will close at 5:00 pm on the last day of the
+                semester.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                <strong>Q:&nbsp;&nbsp;</strong>Can I redo the last module if I
+                don't make an 80?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>A:&nbsp;&nbsp;</strong>If you submit your work by the
+                Monday of the last week, you should be able to redo the module
+                if needed. However, PBE rules state that if your work is not
+                submitted by 5:00 that Monday, you will not be allowed a redo.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                <strong>Q:&nbsp;&nbsp;</strong>Am I on schedule to successfully
+                complete my courses?
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>A:&nbsp;&nbsp;</strong>Please check the suggested
+                schedules at the top of this page to see if you're where you
+                need to be. Contact your instructor if you have any questions
+                about your progress.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                <strong>Q:&nbsp;&nbsp;</strong>What if I don't finish my class
+                in time?
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingSix"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>A:&nbsp;&nbsp;</strong>If you don't complete the course
+                successfully, you can register for the class the following
+                semester and then pick up where you left off. You'll want to
+                pick up asap though, because the longer you wait, the more
+                material you will forget, and the more time it will take to
+                review the previously completed material. When you pick up where
+                you left off, you might be able to accelerate, finish the course
+                early, and add an additional course free of charge.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 7 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven"
+                aria-expanded="false"
+                aria-controls="collapseSeven"
+              >
+                <strong>Q:&nbsp;&nbsp;</strong>Can I drop with a W?
+              </button>
+            </h2>
+            <div
+              id="collapseSeven"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingSeven"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>A:&nbsp;&nbsp;</strong>If you drop a course on or before
+                the drop date, you'll receive a grade of 'W' (withdrawn) on your
+                transcript rather than an A, B, or F. You can evaluate things
+                just before the drop deadline to determine if it's in your best
+                interest to drop the course or continue with it. In general, if
+                you're just starting the course material close to the drop date,
+                then you might want to drop. If you're close to finishing the
+                course, you might want to get as far as you can and then pick up
+                where you left off next semester.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End FAQ Section -->
+
+    <hr />
+
+    <!-- Footer section -->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <p class="text-center text-muted">
+          © 2022 <a href="mailto:shelby.coffman@gmail.com">Shelby Coffman</a>
+        </p>
+      </footer>
+    </div>
+    <!-- End footer section-->
+  </body>
+</html>
