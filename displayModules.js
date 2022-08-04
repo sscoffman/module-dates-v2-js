@@ -18,6 +18,7 @@ const endDateMeme = new Date("Monday December 5, 2022 11:59:59");   //MEME prefe
 //today's date
 const TODAY = new Date();
 document.getElementById('main-heading').innerHTML = heading;
+document.getElementsByTagName('title').innerHTML =heading;
 
 //generate due dates for the 4 different schedule types
 var arr15 = generateDueDates(startDate15, endDate15, modules);
