@@ -9,7 +9,7 @@ const startDate71 = new Date("Monday August 29, 2022 0:0:0");   //7.5 week start
 const endDate71 = new Date("Tuesday October 18, 2022 11:59:59");  //7.5 week preferred last due date
 const startDate72 = new Date("Wednesday October 19, 2022 0:0:0");  //7.5 week start date (second half)
 const endDate72 = new Date("Monday December 5, 2022 11:59:59");     //7.5 week preferred last due date
-const startDateMeme = new Date("Monday September 3, 2022 0:0:0");   //MEME start date
+const startDateMeme = new Date("Monday October 3, 2022 0:0:0");   //MEME start date
 const endDateMeme = new Date("Monday December 5, 2022 11:59:59");   //MEME preferred last due date
 
 //--------END MODIFICATION AREA.------------
